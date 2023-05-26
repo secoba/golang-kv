@@ -23,7 +23,7 @@ import (
 
 	badger "github.com/dgraph-io/badger/v4"
 	//"github.com/dgraph-io/badger/v3/options"
-	"github.com/ucwong/golang-kv/common"
+	"github.com/secoba/golang-kv/common"
 )
 
 type Badger struct {

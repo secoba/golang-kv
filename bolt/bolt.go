@@ -24,8 +24,8 @@ import (
 	"sync"
 	"time"
 
+	"github.com/secoba/golang-kv/common"
 	"github.com/ucwong/go-ttlmap"
-	"github.com/ucwong/golang-kv/common"
 
 	bolt "go.etcd.io/bbolt"
 )

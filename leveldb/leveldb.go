@@ -22,12 +22,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/secoba/golang-kv/common"
 	"github.com/syndtr/goleveldb/leveldb"
 	"github.com/syndtr/goleveldb/leveldb/errors"
 	"github.com/syndtr/goleveldb/leveldb/opt"
 	"github.com/syndtr/goleveldb/leveldb/util"
 	"github.com/ucwong/go-ttlmap"
-	"github.com/ucwong/golang-kv/common"
 )
 
 type LevelDB struct {

@@ -16,11 +16,10 @@
 package kv
 
 import (
-	"github.com/ucwong/golang-kv/badger"
-	"github.com/ucwong/golang-kv/bolt"
-	"github.com/ucwong/golang-kv/leveldb"
-	"github.com/ucwong/golang-kv/nutsdb"
-	"github.com/ucwong/golang-kv/pebble"
+	"github.com/secoba/golang-kv/badger"
+	"github.com/secoba/golang-kv/bolt"
+	"github.com/secoba/golang-kv/leveldb"
+	"github.com/secoba/golang-kv/nutsdb"
 )
 
 func Badger(path string, opt ...badger.BadgerOption) Bucket {
@@ -35,9 +34,9 @@ func LevelDB(path string, opt ...leveldb.LevelDBOption) Bucket {
 	return leveldb.Open(path, opt...)
 }
 
-func Pebble(path string, opt ...pebble.PebbleOption) Bucket {
-	return pebble.Open(path, opt...)
-}
+//func Pebble(path string, opt ...pebble.PebbleOption) Bucket {
+//	return pebble.Open(path, opt...)
+//}
 
 func NutsDB(path string, opt ...nutsdb.NutsdbOption) Bucket {
 	return nutsdb.Open(path, opt...)
